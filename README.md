@@ -22,3 +22,21 @@ Summary sheet — 4 live KPI cards: Total Revenue, Total Agents, % Who Hit Targe
 
 
 Skills demonstrated: SUMIF/AVERAGEIF, IF logic, conditional formatting, pivot-table-style aggregation, charting, KPI dashboard design.
+
+Project 2: HR Attendance Dashboard
+
+File: HR_Attendance_Dashboard.xlsx
+
+Business use-case: An HR team needs a weekly/monthly attendance tracker showing absenteeism, leave, and attendance % by department.
+
+What's inside:
+
+
+Attendance — 660 daily records for 30 employees across 22 working days (June 2026), with a dropdown-validated Status column (P/A/L/HD)
+Employee Summary — per-employee counts via COUNTIFS, Attendance % formula, and a SUMIFS cross-check by month + department
+Conditional formatting — red (<75%), yellow (75–85%), green (≥85%)
+Department Summary — pivot-style average attendance % by department, with bar chart
+Dashboard — KPI cards (Company Avg Attendance %, Total Employees, Employees Below 75%, Most Absent Employee) and a dynamic Top 5 Most Absent Employees table using LARGE + INDEX/MATCH
+
+
+Skills demonstrated: COUNTIFS/SUMIFS multi-criteria formulas, data validation, conditional formatting, pivot-table-style aggregation, dynamic ranking formulas, dashboard design.
