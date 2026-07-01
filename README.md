@@ -38,4 +38,18 @@ Excel-based MIS and dashboard projects built to demonstrate core data analysis s
 
 ---
 
-.
+## Project 3: Collections MIS Tracker (Finance/BFSI)
+**File:** `Collections_MIS_Tracker.xlsx`
+
+**Business use-case:** A collections team at a bank/NBFC needs a daily tracker showing outstanding loan amounts, EMI collected, recovery %, and overdue aging buckets (30/60/90 days).
+
+**What's inside:**
+- `Raw Data` — 60 loan accounts across 5 collection agents, with a fixed Report Date reference cell (avoids the volatility of `TODAY()` shifting results on reopen)
+- `Outstanding` (`=Loan Amount - EMI Collected`), `Days Overdue` (`=ReportDate - DueDate`)
+- `Bucket` — nested `IF` classification: Not Due / Bucket 1 (0–30) / Bucket 2 (31–60) / Bucket 3 (61–90) / NPA (90+)
+- `Recovery %` (`=EMI Collected/EMI Due*100`) with conditional formatting: red (<60%), orange (60–80%), green (>80%)
+- `Bucket Summary` — pivot-style sum of Outstanding by aging bucket, with bar chart
+- `Agent Summary` — collection performance by agent, with bar chart
+- `Dashboard` — KPI cards: Total EMI Due, Total EMI Collected, Overall Recovery %, NPA Count
+
+**Skills demonstrated:** Date arithmetic, nested IF logic, aging-bucket classification, conditional formatting, pivot-table-style aggregation, multi-chart dashboard design — core BFSI/collections MIS skills.
