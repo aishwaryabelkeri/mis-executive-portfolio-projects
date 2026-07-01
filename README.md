@@ -38,6 +38,4 @@ Excel-based MIS and dashboard projects built to demonstrate core data analysis s
 
 ---
 
-## Notes
-- All calculated values are Excel formulas, not hardcoded numbers — the workbooks recalculate live if source data is edited.
-- Sample data is synthetic, generated to reflect realistic business scenarios (e.g. one region outperforming, one lagging).
+.
